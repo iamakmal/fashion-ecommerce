@@ -2,44 +2,44 @@ import React from 'react'
 
 export default function Navbar() {
     return (
-        <nav className="bg-white w-full">
+        <nav className="bg-white w-full mb-2">
             <div className="flex h-16">
 
                 <div className="flex justify-start items-center">
-                    <img src="logo.png" alt="Logo" className="h-14 mt-2" />
+                    <img src="logo.png" alt="Logo" className="h-16 mt-2 ml-2" />
                 </div>
 
 
                 <div className="hidden md:flex space-x-8 ml-40 items-center">
-                    <a href="#" className="text-gray-800 hover:text-gray-600">Home</a>
+                    <a href="" className="text-gray-800 hover:text-gray-600 hover:underline hover:underline-offset-8">Home</a>
                     <div className="relative group">
-                        <a href="#" className="text-gray-800 hover:text-gray-600">Women</a>
-                        <div className="absolute hidden group-hover:block bg-white shadow-lg top-full left-0 w-96 mt-2">
+                        <a href="#" className="text-gray-800 hover:text-gray-600 hover:underline hover:underline-offset-8">Women</a>
+                        <div className="absolute hidden group-hover:block bg-white shadow-lg top-full left-0 w-96 mt-2 z-10">
                             <div className="p-6 grid grid-cols-2 gap-4">
                                 <div>
                                     <img src="cloth.jpg" alt="cloth" className="h-16 mt-2" />
                                     <h3 className="text-lg font-semibold text-gray-800">Clothing</h3>
                                     <ul>
-                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800">Dresses</a></li>
-                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800">Tops</a></li>
-                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800">Bottoms</a></li>
+                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800 hover:underline hover:underline-offset-8">Dresses</a></li>
+                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800 hover:underline hover:underline-offset-8">Tops</a></li>
+                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800 hover:underline hover:underline-offset-8">Bottoms</a></li>
                                     </ul>
                                 </div>
                                 <div>
                                     <img src="bag.jpg" alt="bag" className="h-16 mt-2" />
                                     <h3 className="text-lg font-semibold text-gray-800">Accessories</h3>
                                     <ul>
-                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800">Bags</a></li>
-                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800">Jewelry</a></li>
-                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800">Hats</a></li>
+                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800 hover:underline hover:underline-offset-8">Bags</a></li>
+                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800 hover:underline hover:underline-offset-8">Jewelry</a></li>
+                                        <li><a href="#" className="block mt-2 text-gray-600 hover:text-gray-800 hover:underline hover:underline-offset-8">Hats</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="#" className="text-gray-800 hover:text-gray-600">Men</a>
-                    <a href="#" className="text-gray-800 hover:text-gray-600">Kids</a>
-                    <a href="#" className="text-gray-800 hover:text-gray-600">Sale</a>
+                    <a href="#" className="text-gray-800 hover:text-gray-600 hover:underline hover:underline-offset-8">Men</a>
+                    <a href="#" className="text-gray-800 hover:text-gray-600 hover:underline hover:underline-offset-8">Kids</a>
+                    <a href="#" className="text-gray-800 hover:text-gray-600 hover:underline hover:underline-offset-8">Sale</a>
                 </div>
 
                 <div className="flex ml-auto mt-2 justify-end lg:hidden">
