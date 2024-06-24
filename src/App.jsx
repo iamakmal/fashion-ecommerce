@@ -1,4 +1,5 @@
 import Features from "./components/Features"
+import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Offer from "./components/Offer"
 import Products from "./components/Products"
@@ -13,6 +14,7 @@ function App() {
     <Features/>
     <Offer/>
     <Products/>
+    <Footer/>
     </>
   )
 }
