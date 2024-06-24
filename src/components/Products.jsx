@@ -78,9 +78,13 @@ const handleLoadMore = () => {
     }
     </div>
     {
-        visibleProducts < products.length && (
+        visibleProducts < products.length ? (
             <div className="flex justify-center mt-10">
                 <button className="btn btn-outline" onClick={handleLoadMore}> Load More</button>
+            </div>
+        ) : (
+            <div className="flex justify-center mt-10">
+                <button className="btn btn-outline" onClick={(e)=> setVisibleProducts(3)}> Hide</button>
             </div>
         )
     }
