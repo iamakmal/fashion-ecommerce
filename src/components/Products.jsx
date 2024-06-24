@@ -4,6 +4,7 @@ import axios from 'axios'
 export default function Products() {
   const[products, setProducts] = useState([])
   const[categories, setCategories] = useState([])
+  const[visibleProducts, setVisibleProducts]=useState(3)
   const[selectedCategory, setSelectedCategory] = useState("all")
 
   const retrieveProducts = () => {
@@ -25,6 +26,10 @@ useEffect(() => {
   retrieveProducts()
 },[])
 
+const handleLoadMore = () => {
+    setVisibleProducts((prev) => prev + 3)
+}
+
   return (
     <>
     <h1 className="text-4xl mt-10 text-center">Featured Products</h1>
@@ -37,7 +42,7 @@ useEffect(() => {
             ))
         }
     </div>
-    <div className="flex justify-around flex-wrap space-x-5 space-y-5">
+    <div className="flex justify-evenly flex-wrap m-10 gap-5">
     {
         products.filter((product)=>{
             if(selectedCategory==="all"){
@@ -46,6 +51,7 @@ useEffect(() => {
                 return product.category === selectedCategory
             }
         })
+        .slice(0, visibleProducts)
         .map((product)=>(
             <div className="card bg-base-100 w-96 h-[600px] shadow-xl">
             <figure>
@@ -71,6 +77,13 @@ useEffect(() => {
         ))
     }
     </div>
+    {
+        visibleProducts < products.length && (
+            <div className="flex justify-center mt-10">
+                <button className="btn btn-outline" onClick={handleLoadMore}> Load More</button>
+            </div>
+        )
+    }
     </>
   )
 }
