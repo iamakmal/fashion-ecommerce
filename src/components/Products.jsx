@@ -42,7 +42,7 @@ const handleLoadMore = () => {
             ))
         }
     </div>
-    <div className="flex justify-evenly flex-wrap m-10 gap-5">
+    <div className="flex justify-center flex-wrap m-10 gap-5">
     {
         products.filter((product)=>{
             if(selectedCategory==="all"){
